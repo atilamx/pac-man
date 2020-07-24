@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pacman game html5, game made with pure javascript</title>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="p8A5DEsnPhDlSD3IVDafHS020kkqXlbkFOc8xk0zeaE=" name="csrf-token" />
+  <meta content="0fz/eQ59iND10dP8kroYr16eXl2l0rHuUCDp+oJOMyQ=" name="csrf-token" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173489983-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173489983-1');
+</script>
+
+
+
+  <meta name="description" content="Pacman in html5 is game which shows what you can create with 2d canvas" />
+  <meta name="news_keywords" content="Pacman, games html5,pac-man game html5,pacman game, canvas html5, pacman ia,
+skynetlives">
+  <meta name="keywords" content="pacman online, Pacman, Pac Man, Pac-Man, clone pac man, clone pac man, games html5, pac-man game html5, pacman game, canvas html5, pacman ia,
+skynetlives,pacman html5 canvas">
+  <meta name="google-site-verification" content="rLr0FwvaMreRW8YfEHpxK_--nreVvcOVG0bXg2PFlt8" />
+                  <meta name="msvalidate.01" content="7CA04EA67BC9DA349B653747754A0A12" />
+</head>
+
+<body bgcolor="black">
+
+<div class=wrap>
+   ----------
+
+<style>
+ #canvas {
+        position: absolute;
+     left: 400px;
+     top: 20px;
+        width: 480px;
+        height:600px;
+        margin: 3px auto;
+        border: 1px solid red;
+ }
+
+ #canvas2 {
+     width: 280px;
+     height:400px;
+
+     position: absolute;
+     left: 100px;
+     top: 80px;
+
+     margin: 3px auto;
+     border: 1px solid green;
+ }
+
+ #canvas3 {
+     width: 280px;
+     height:400px;
+
+     position: absolute;
+     left: 900px;
+     top: 80px;
+
+     margin: 3px auto;
+     border: 1px solid green;
+ }
+#bottom { 
+     color: red;                          
+     position: fixed;
+  left: 50%;
+  bottom: 1px;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+} 
+</style>
+<div>
+
+<meta name="description" content="Pacman in html5 is game which shows what you can create with 2d canvas" />
+<meta name="news_keywords" content="Pacman, games html5,pac-man game html5,pacman game, canvas html5, pacman ia, skynetlives">
+<meta name="keywords" content="Pacman, games html5, pac-man game html5, pacman game, canvas html5, pacman ia, skynetlives,pacman html5 canvas">
+
+<audio id="backgrond1" src="pacman_background1_long.mp3" >
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="pacman_power1" src="pacman_power1.ogg">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="pacman_getghost" src="pacman_getghost.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="pacman_coinin" src="pacman_coinin.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="pacman_song1" src="pacman_song1.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="pacman_death" src="pacman_death.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="exellent" src="exellent.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="outstanding" src="outstanding.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="superv" src="superv.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="well_done" src="well_done.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="well_done2" src="well_done.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="flawless" src="flawless.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="extralife" src="extralife.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="brutality" src="brutality.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+<audio id="laugh" src="laugh.mp3">
+  <p>Your browser does not support the <code>audio</code> element </p>
+</audio>
+
+
+<div id="canvas">
+  <canvas id="myCanvas" width="480" height="600" style="background-color: black"></canvas>
+</div>
+
+<div id="canvas2">
+  <canvas id="myCanvas2" width="280" height="400" style="background-color: black"></canvas>
+</div>
+
+
+<div id="canvas3">
+  <canvas id="myCanvas3" width="280" height="400" style="background-color: black"></canvas>
+</div>
+
+<div>
+<h1>Press Enter To Play</h1>
+</div>
+
+
+<link data-turbolinks-track="true" href="application.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="pacman.css?body=1" media="all" rel="stylesheet" />
+<script data-turbolinks-track="true" src="jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="jquery_ujs.js?body=1"></script>
+<script data-turbolinks-track="true" src="turbolinks.js?body=1"></script>
+<script data-turbolinks-track="true" src="global_constants.js?body=1"></script>
+<script data-turbolinks-track="true" src="initialize.js?body=1"></script>
+<script data-turbolinks-track="true" src="leftCanvas.js?body=1"></script>
+<script data-turbolinks-track="true" src="interrupts.js?body=1"></script>
+<script data-turbolinks-track="true" src="eventsobserver.js?body=1"></script>
+<script data-turbolinks-track="true" src="keyobserver.js?body=1"></script>
+<script data-turbolinks-track="true" src="scoreobserver.js?body=1"></script>
+<script data-turbolinks-track="true" src="base.js?body=1"></script>
+<script data-turbolinks-track="true" src="lifes.js?body=1"></script>
+<script data-turbolinks-track="true" src="textscore.js?body=1"></script>
+<script data-turbolinks-track="true" src="sound_effects.js?body=1"></script>
+<script data-turbolinks-track="true" src="engine.js?body=1"></script>
+<script data-turbolinks-track="true" src="randomEngine.js?body=1"></script>
+<script data-turbolinks-track="true" src="huntEngine.js?body=1"></script>
+<script data-turbolinks-track="true" src="squareEngine.js?body=1"></script>
+<script data-turbolinks-track="true" src="megamind.js?body=1"></script>
+<script data-turbolinks-track="true" src="pacman.js?body=1"></script>
+<script data-turbolinks-track="true" src="gameCharacterVelocity.js?body=1"></script>
+<script data-turbolinks-track="true" src="gameCharacter.js?body=1"></script>
+<script data-turbolinks-track="true" src="maze.js?body=1"></script>
+<script data-turbolinks-track="true" src="maze_limits.js?body=1"></script>
+<script data-turbolinks-track="true" src="pills.js?body=1"></script>
+<script data-turbolinks-track="true" src="labyrinth.js?body=1"></script>
+<script data-turbolinks-track="true" src="graph_constructor.js?body=1"></script>
+<script data-turbolinks-track="true" src="loop.js?body=1"></script>
+<script data-turbolinks-track="true" src="fruitsController.js?body=1"></script>
+<script data-turbolinks-track="true" src="rightCanvas.js?body=1"></script>
+<script data-turbolinks-track="true" src="ghost.js?body=1"></script>
+<script data-turbolinks-track="true" src="game.js?body=1"></script>
+<script data-turbolinks-track="true" src="arrays.js?body=1"></script>
+<script data-turbolinks-track="true" src="application.js?body=1"></script>
+
+   -----------
+</div>
+<style>
+    body, html {height:100%;}
+    div.wrap {height:100%; overflow:hidden;}
+</style>
+ <h1 id="bottom">Press Enter to Play!</h1>
+</body>
+</html>
+
+<script>
+  console.log("HELLO WORLD FROM A RASPBERRY COMPUTER RUNNING NGINX AND A VERSION OF PACMAN ENJOY")
+</script>
