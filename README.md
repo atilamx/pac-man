@@ -27,5 +27,7 @@ server {
 	}
 
 }
+```
 
-![picture](img/pac-man.png)
+
+![picture](pac-man.png)
