@@ -4,7 +4,7 @@ Docker: https://hub.docker.com/r/manologutierrez/nginx-pacman
 
 Demo: http://pac-man.michelada.io
 
-Im Planning to use the game to train a Neural Network that im working with.
+Im Planning to use the game to train a Neural Network that im working on.
 
 Run the code through nginx as a web server, otherwise it will not work the reason is that the game does some ajax calls. Hope you like it :)
 
