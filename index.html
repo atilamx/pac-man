@@ -2,31 +2,26 @@
 <html>
 <head>
   <title>Pacman game html5, game made with pure javascript</title>
-  <meta content="authenticity_token" name="csrf-param" />
-<meta content="p8A5DEsnPhDlSD3IVDafHS020kkqXlbkFOc8xk0zeaE=" name="csrf-token" />
-  <meta content="0fz/eQ59iND10dP8kroYr16eXl2l0rHuUCDp+oJOMyQ=" name="csrf-token" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173489983-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-173489983-1');
 </script>
 
-
-
-  <meta name="description" content="Pacman in html5 is game which shows what you can create with 2d canvas" />
-  <meta name="news_keywords" content="Pacman, games html5,pac-man game html5,pacman game, canvas html5, pacman ia,
-skynetlives">
-  <meta name="keywords" content="pacman online, Pacman, Pac Man, Pac-Man, clone pac man, clone pac man, games html5, pac-man game html5, pacman game, canvas html5, pacman ia,
-skynetlives,pacman html5 canvas">
-  <meta name="google-site-verification" content="rLr0FwvaMreRW8YfEHpxK_--nreVvcOVG0bXg2PFlt8" />
-                  <meta name="msvalidate.01" content="7CA04EA67BC9DA349B653747754A0A12" />
+<meta name="description" content="Pacman in html5 is game that shows what you can create with 2d canvas, it was written entirely using javascript and some css." />
+<meta name="news_keywords" content="Pacman, games html5,pac-man, game html5, pacman game, canvas html5, Pacman ia,
+">
+<meta name="keywords" content="pacman online, Pacman, Pac Man, Pac-Man, clone pac man, clone pac man, games html5, pac-man game html5, pacman game, canvas html5, pacman ia, pacman html5 canvas, Pacman html5, Pacman javascript">
+<meta name="author" content="pac-man.michelada.io">
+<meta property="og:title" content="pac-man.michelada.io :: Pacman html5">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Pacman html5 written entirely using javascript">
+<meta property="og:url" content="http://pac-man.michelada.io/">
 </head>
 
-<body bgcolor="black">
+<body bgcolor="black" scroll="no" style="overflow: hidden">
 
 <div class=wrap>
    ----------
@@ -65,12 +60,23 @@ skynetlives,pacman html5 canvas">
      margin: 3px auto;
      border: 1px solid green;
  }
+
 #bottom { 
-     color: red;                          
-     position: fixed;
+  color: red;                          
+  position: fixed;
   left: 50%;
   bottom: 1px;
   transform: translate(-50%, -50%);
+  margin: 0 auto;
+} 
+
+#start_game_button { 
+  color: blue;                          
+  position: fixed;
+  left: 0%;
+  height:90px;
+  width:390px;
+  font-size : 40px;
   margin: 0 auto;
 } 
 </style>
@@ -157,7 +163,28 @@ skynetlives,pacman html5 canvas">
 <div>
 <h1>Press Enter To Play</h1>
 </div>
+<script>
+  //disable scaling and zooming for mobile
+  //Last minute fixes :(
+  document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+  }, { passive: false });
 
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  if (isMobile) {  
+    var btn = document.createElement("BUTTON");
+    btn.innerHTML = "Touch Me To Play!";
+    btn.id = 'start_game_button';  
+    document.body.appendChild(btn);
+  } else {
+    var h = document.createElement("H1");
+    h.id = "bottom";
+    var t = document.createTextNode("Press Enter to start!");
+    h.appendChild(t);
+    document.body.appendChild(h);                               
+  }    
+</script>
 
 <link data-turbolinks-track="true" href="application.css?body=1" media="all" rel="stylesheet" />
 <link data-turbolinks-track="true" href="pacman.css?body=1" media="all" rel="stylesheet" />
@@ -201,8 +228,7 @@ skynetlives,pacman html5 canvas">
 <style>
     body, html {height:100%;}
     div.wrap {height:100%; overflow:hidden;}
-</style>
- <h1 id="bottom">Press Enter to Play!</h1>
+</style>  
 </body>
 </html>
 

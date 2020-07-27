@@ -1,0 +1,5 @@
+{
+    "name":"Pacman game",
+    "display":"standalone",
+    "orientation":"landscape"
+}
