@@ -1,4 +1,4 @@
-This code was just an exercise for me just to keep my coding skill up to date. The game runs smoothly and it is engaging unfortunately for now it does not work in mobile; I need to make some adjustments for that and I used only Chrome so it does not work outside that browser at all.
+This code was just an exercise for me just to keep my coding skill up to date. The game runs smoothly and it is engaging. I used only Chrome so it does not work outside that browser at all.
 
 Docker: https://hub.docker.com/r/manologutierrez/nginx-pacman
 
