@@ -4,11 +4,12 @@
   "description": "PACMAN Game",
   "main": "initialize.js",
   "bin": {
-    "pac-man": "http-server -v"
+    "pacman-server": "./bin/pac-man-server",
+    "hs": "./bin/pac-man-server"
   },
   "scripts": {
     "test": "exit 1",
-    "start": "node node_modules/.bin/http-server -v"
+    "start": "node ./bin/pac-man-server -p 80"
   },
   "repository": {
     "type": "git",
