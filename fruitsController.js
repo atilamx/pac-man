@@ -26,11 +26,11 @@ Window.fruitsController = (function (){
   };
 
   var initialize = function(){
-    bell.src       = "bell.jpg";
-    apple.src      = "apple.png";
-    orange.src     = "orange.png";
-    galaxian.src   = "galaxian.png";
-    strawberry.src = "strawberry.png";
+    bell.src       = "images/bell.jpg";
+    apple.src      = "images/apple.png";
+    orange.src     = "images/orange.png";
+    galaxian.src   = "images/galaxian.png";
+    strawberry.src = "images/strawberry.png";
 
     fruits = [
               {obj: apple     ,cost: 400 },

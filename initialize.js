@@ -88,8 +88,8 @@ Window.ScreenCanvas = (function Screen(){
 
     wholeTextIndex = randomIndex(urls.length);
 
-    img.src = "skull.jpg"
-    img2.src= "skull2.jpg"
+    img.src = "images/skull.jpg"
+    img2.src= "images/skull2.jpg"
   }
 
   var printChunk = function(){
