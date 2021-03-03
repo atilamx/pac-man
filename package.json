@@ -4,12 +4,12 @@
   "description": "PACMAN Game",
   "main": "initialize.js",
   "bin": {
-    "pacman-server": "./bin/pac-man-server",
-    "hs": "./bin/pac-man-server"
+    "pacman-server": "./bin/pac-man-server -p 80 -c-1 -g -o",
+    "hs": "./bin/pac-man-server -p 80 -c-1 -g -o"
   },
   "scripts": {
     "test": "exit 1",
-    "start": "node ./bin/pac-man-server -p 80"
+    "start": "node ./bin/pac-man-server -p 80 -c-1 -g -o"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
     "url": "https://github.com/atilamx/pac-man/issues"
   },
   "dependencies": {
-    "http-server": "0.12.3"
+    "http-server": "0.12.3",
+    "open": "8.0.1"
   },
   "homepage": "https://github.com/atilamx/pac-man#readme"
 }
