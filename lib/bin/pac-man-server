@@ -245,10 +245,9 @@ function listen(port) {
     if (argv.o) {
       var openUrl = protocol + canonicalHost + ':' + port;
       if (typeof argv.o === 'string') {
-        openUrl += argv.o[0] === '/' ? argv.o : '/' + argv.o;
+        openUrl += argv.o[0] === '/lib' ? argv.o : '/lib' + argv.o;
       }
       logger.info('open: ' + openUrl);
-      //opener(openUrl);
       open(openUrl, {app: {name: 'google chrome', arguments: '--incognito'}});
     }
   });
