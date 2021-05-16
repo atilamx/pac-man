@@ -1,0 +1,28 @@
+{
+  "name": "pac-man",
+  "version": "1.0.0",
+  "description": "PACMAN Game",
+  "main": "initialize.js",
+  "bin": {
+    "pacman-server": "cd lib && ./bin/pac-man-server -p 80 -c-1 -g -o ",
+    "hs": "cd lib && ./bin/pac-man-server -p 80 -c-1 -g -o "
+  },
+  "scripts": {
+    "test": "exit 1",
+    "start": "cd lib && node ./bin/pac-man-server -p 80 -c-1 -g -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atilamx/pac-man.git"
+  },
+  "author": "Manuel Gutierrez",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/atilamx/pac-man/issues"
+  },
+  "dependencies": {
+    "http-server": "0.12.3",
+    "open": "8.0.1"
+  },
+  "homepage": "https://github.com/atilamx/pac-man#readme"
+}
