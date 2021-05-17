@@ -1,6 +1,6 @@
 {
-  "name": "pac-man",
-  "version": "1.0.0",
+  "name": "pac-man-game",
+  "version": "1.0.1",
   "description": "PACMAN Game",
   "main": "initialize.js",
   "bin": {
@@ -15,6 +15,15 @@
     "type": "git",
     "url": "git+https://github.com/atilamx/pac-man.git"
   },
+  "keywords": [
+    "pacman",
+    "pac-man",
+    "pacman-game",
+    "pac-man-game",
+    "game-80",
+    "game",
+    "ghost"    
+  ],
   "author": "Manuel Gutierrez",
   "license": "BSD-2-Clause",
   "bugs": {
