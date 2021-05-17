@@ -1,6 +1,6 @@
 {
   "name": "pac-man-game",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Pac-Man Game made in JS",
   "main": "initialize.js",
   "scripts": {
