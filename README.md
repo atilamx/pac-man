@@ -17,9 +17,9 @@ npm install pac-man-game
 
 ### Run it
 ```sh
-cd pac-man-game 
+cd node_modules/pac-man-game 
 npm install
 npm start 
 ```
 
-![picture](.//lib/www/images/pacman.png)
+![picture](.//lib/www/images/pac-man.png)
