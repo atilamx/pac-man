@@ -25,3 +25,5 @@ npm start
 ```
 
 ![picture](.//lib/www/images/pac-man.png)
+
+smple test
